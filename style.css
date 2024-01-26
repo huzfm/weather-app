@@ -1,0 +1,62 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+   
+  }
+*{
+      margin: 0;
+      padding: 0;
+}
+ .bg-clip{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+ }
+  .container {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.5); /* Set the background color to be transparent */
+      border-radius: 10px;
+      box-shadow: 0 0 0px rgba(0, 0, 0); /* Adjust the alpha value here for the box shadow transparency */
+      margin-top: 105px;
+      ;
+  }
+  
+  h1 {
+      font-size: 24px;
+      padding-bottom: 20px;
+  }
+  
+  input[type="text"] {
+      width: 100%;
+
+      padding: 5px 5px 5px 5px;
+      font-size: 20px;
+      border: 2px solid black;
+      border-radius: 10px;
+      
+      /* border: 1px solid #ccc; */
+      
+  }
+  
+  button {
+      background-color:black;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 30px;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 20px;
+  }
+  button:hover{
+      zoom: 110%;
+  }
+  
+  .weather-info {
+      margin-top: 20px;
+      font-size: 30px;
+  }
