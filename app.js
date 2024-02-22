@@ -7,12 +7,22 @@ const locationElement = document.getElementById('location');
 const temperatureElement = document.getElementById('temperature');
 const descriptionElement = document.getElementById('description');
 
+
+
 searchButton.addEventListener('click', () => {
+    
+    console.log('Button clicked')
     const location = locationInput.value;
     if (location) {
         fetchWeather(location);
     }
+
+ 
+    
 });
+
+
+
 
 function fetchWeather(location) {
     const url = `${apiUrl}?q=${location}&appid=${apiKey}&units=metric`;
@@ -26,8 +36,10 @@ function fetchWeather(location) {
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
+            alert("Please Enter valid City name")
+
         });
-        
-        
+
+
 }
 
