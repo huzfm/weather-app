@@ -24,9 +24,21 @@ body {
       margin-top: 105px;
       ;
   }
+  @media only screen and (max-width:500px){
+        .container{
+            width: 300px;
+            height: auto;
+            position: relative;
+            top: 70px;
+            border-radius: 10px;
+            
+        }
+  }
   
   h1 {
-      font-size: 24px;
+      font-size: 35px;
+      font-family: sans-serif;
+      font-weight: 400;
       padding-bottom: 20px;
   }
   
