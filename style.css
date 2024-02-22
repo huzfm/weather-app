@@ -65,8 +65,10 @@ body {
       font-size: 20px;
   }
   button:hover{
-      zoom: 110%;
+     color: rgb(48, 48, 87);
+     
   }
+  
   
   .weather-info {
       margin-top: 20px;
