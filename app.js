@@ -23,7 +23,7 @@ searchButton.addEventListener('click', (e) => {
     if (location) {
         fetchWeather(location);
     }
-    
+  
 });
 
 
@@ -41,7 +41,14 @@ function fetchWeather(location) {
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
-            locationElement.textContent = "Please Enter valid City name";
+            locationElement.textContent = "Please enter the valid City name";
+            temperatureElement.textContent = "or check"
+            descriptionElement.textContent = "spelling"
+            // locationElement.style = 'color : red'
+            // temperatureElement.style = 'color : red'
+            // descriptionElement.style = 'color : red '
+            
+
 
         });
 
