@@ -8,16 +8,21 @@ const temperatureElement = document.getElementById('temperature');
 const descriptionElement = document.getElementById('description');
 
 
-
-searchButton.addEventListener('click', () => {
-    
-    console.log('Button clicked')
+function handleInput(e){
+    if (e.keyCode === 13){
+      
+        const location = locationInput.value;
+        if (location) {
+            fetchWeather(location);
+        } 
+    }
+}
+searchButton.addEventListener('click', (e) => {
+   
     const location = locationInput.value;
     if (location) {
         fetchWeather(location);
     }
-
- 
     
 });
 
@@ -36,7 +41,7 @@ function fetchWeather(location) {
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
-            alert("Please Enter valid City name")
+            locationElement.textContent = "Please Enter valid City name";
 
         });
 
